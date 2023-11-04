@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add New User</title>
+    
+    <link rel="icon" href="theempire.jpg" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Font CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Page wrapper -->
+<div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar" id="accordionSidebar">
+        <a class="navbar-brand sidebar-brand" href="index.html">
+            <div class="sidebar-icon">
+                <span>Recycle Now</span>
+            </div>
+        </a>
+        <hr class="sidebar-divider my-0">  
+        <li class="nav-item"><a href="index.html">Dashboard</a></li>
+        <hr class="sidebar-divider">
+        <div class="siderbar-heading">
+            Main
+        </div>
+        <li class="nav-item"><a href="#" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-users-cog"></i> Users</a>
+            <div id="collapseOne" class="collapse" data-parent="#accordionSidebar">
+                <nav class="nav flex-column collapseNav">
+                    <a class="nav-link collapse-item" href="usersList.html">Users List</a>
+                    <a class="nav-link collapse-item" href="addUser.html">Add User</a>
+                </nav>
+            </div>
+        </li>
+        <li class="nav-item"><a href="#" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-fw fa-cog"></i>Pickup Service</a>
+            <div id="collapseTwo" class="collapse" data-parent="#accordionSidebar">
+                <nav class="nav flex-column collapseNav">
+                    <a class="nav-link collapse-item" href="pickupService.html">Pickup Service</a>
+                    <a class="nav-link collapse-item" href="addDriver.html">Add Driver</a>
+                </nav>
+            </div>
+        </li>
+        <li class="nav-item"><a href="listings.html"><i class="fas fa-plus"></i>Listings</a></li>
+        <hr class="sidebar-divider">
+        <div class="siderbar-heading">
+            Others Functions
+        </div>
+        <li class="nav-item"><a href="reports.html"><i class="far fas fa-file-alt"></i>Reports</a></li>
+        <li class="nav-item"><a href="addSlider.html"><i class="fas fa-stream"></i>Sliders</a></li>
+        <li class="nav-item"><a href="settings.html"><i class="fas fa-cogs"></i>Settings</a></li>
+        <li class="nav-item"><a href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
+    </ul>
+    <!-- End Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column adminArea">
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <span class="admin-avatar ml-auto">
+                    <a href="index.html" id="admin-img">
+                        <span class="text-grey">Admin</span>
+                        <img src="img/admin.png" alt="">
+                    </a>
+                </span>
+            </nav>
+
+            <!-- Begin Page Content -->
+            <div class="container">
+
+                <!-- Content Row -->
+                <div class="container">
+                        <div class="table-wrapper">
+                            <!-- Table Header Title-->
+                            <div class="table-title">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h2>Add New <b>User </b></h2>
+                                    </div>
+                                    <div class="col-sm-6">
+                                            <a href="usersList.html" class="btn btn-success">
+                                            <i class="material-icons">undo</i><span>All Users</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add New Client -->
+                            <form class="addClient">
+                                <h3>Personal Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Full Name</label>
+                                        <input type="text" class="form-control" id="inputFullname" placeholder="Full name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Phone Number</label>
+                                        <input type="number" class="form-control" id="inputPhonenumber" placeholder="Phone Number">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>City</label>
+                                        <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                    </div>
+                                </div>
+                                <hr>
+                                <button type="submit" class="btn btn-success">Add</button>
+                            </form>
+                            
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- End Page wrapper -->
+    
+
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- JS Script -->
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>

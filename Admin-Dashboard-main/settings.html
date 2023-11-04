@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users-List</title>
+    
+    <link rel="icon" href="theempire.jpg" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Font CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Page wrapper -->
+<div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar" id="accordionSidebar">
+        <a class="navbar-brand sidebar-brand" href="index.html">
+            <div class="sidebar-icon">
+                <span>Recycle Now</span>
+            </div>
+        </a>
+        <hr class="sidebar-divider my-0">  
+        <li class="nav-item"><a href="index.html">Dashboard</a></li>
+        <hr class="sidebar-divider">
+        <div class="siderbar-heading">
+            Main
+        </div>
+        <li class="nav-item"><a href="#" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-users-cog"></i> Users</a>
+            <div id="collapseOne" class="collapse" data-parent="#accordionSidebar">
+                <nav class="nav flex-column collapseNav">
+                    <a class="nav-link collapse-item" href="usersList.html">Users List</a>
+                    <a class="nav-link collapse-item" href="addUser.html">Add User</a>
+                </nav>
+            </div>
+        </li>
+        <li class="nav-item"><a href="#" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-fw fa-cog"></i>Pickup Service</a>
+            <div id="collapseTwo" class="collapse" data-parent="#accordionSidebar">
+                <nav class="nav flex-column collapseNav">
+                    <a class="nav-link collapse-item" href="pickupService.html">Pickup Service</a>
+                    <a class="nav-link collapse-item" href="addDriver.html">Add Driver</a>
+                </nav>
+            </div>
+        </li>
+        <li class="nav-item"><a href="listings.html"><i class="fas fa-plus"></i>Listings</a></li>
+        <hr class="sidebar-divider">
+        <div class="siderbar-heading">
+            Other functions
+        </div>
+        <li class="nav-item"><a href="reports.html"><i class="far fas fa-file-alt"></i>Reports</a></li>
+        <li class="nav-item"><a href="addSlider.html"><i class="fas fa-stream"></i>Sliders</a></li>
+        <li class="nav-item"><a href="settings.html"><i class="fas fa-cogs"></i>Settings</a></li>
+        <li class="nav-item"><a href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
+    </ul>
+    <!-- End Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column adminArea">
+      
+        <!-- Main Content -->
+        
+        <div class="container">
+          <!-- Top Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="admin-avatar ml-auto">
+                <a href="#" id="admin-img">
+                    <span class="text-grey">Admin</span>
+                    <img src="img/admin.png" alt="">
+                </a>
+            </span>
+        </nav>
+          <div class="row flex-lg-nowrap">
+            <div class="col">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="e-profile">
+                       
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item"><a href="" class="active nav-link">Settings</a></li>
+                        </ul>
+                        <div class="tab-content pt-3">
+                          <div class="tab-pane active">
+                            <form class="form needs-validation" novalidate="">
+                              <div class="row">
+                                <div class="col">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control" type="text" name="name"
+                                          placeholder="Admin" value="">
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="form-group">
+                                        <label>Username</label>
+                                        <input class="form-control" type="text" name="username"
+                                          placeholder="User Name" value="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="form-group">
+                                        <label>Email</label>
+                                        <input class="form-control" type="text" placeholder="user@example.com">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col mb-3">
+                                      <div class="form-group">
+                                        <label>About</label>
+                                        <textarea class="form-control" rows="5" placeholder="My Bio"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                  <div class="mb-2"><b>Change Password</b></div>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="form-group">
+                                        <label>Current Password</label>
+                                        <input class="form-control" type="password" placeholder="••••••">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="form-group">
+                                        <label>New Password</label>
+                                        <input class="form-control" type="password" placeholder="••••••">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="form-group">
+                                        <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
+                                        <input class="form-control" type="password" placeholder="••••••">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col d-flex justify-content-end">
+                                  <button class="btn btn-primary " href="#myModal" class="trigger-btn"
+                                    data-toggle="modal" type="button">Save Changes</button>
+                                  <div id="myModal" class="modal fade">
+                                    <div class="modal-dialog modal-confirm">
+                                      <div class="modal-content">
+                                        <div class="modal-header flex-column">
+                                          <h4 class="modal-title w-100">Are you sure?</h4>
+                                          <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <p>Do you really want to make changes to your profile?</p>
+                                        </div>
+                                        <div class="modal-footer justify-content-center">
+                                          <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cancel</button>
+                                          <button type="submit" class="btn btn-success">Confirm</button>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+  <!-- End of Main Content -->
+
+
+</div>
+<!-- End Page wrapper -->
+    
+
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- JS Script -->
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900|Roboto:400,700,900');
+
+img {
+    width: 100%;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+#wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sidebar-brand {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    z-index: 1;
+}
+
+.dashboard {
+    pointer-events: none;
+}
+.sidebar-icon img {
+    width: 50px;
+}
+
+.sidebar-icon span {
+    align-items: center;
+    vertical-align: bottom;
+    font-size: 18px;
+    margin-left: 5px;   
+}
+
+
+.sidebar {
+    background-color: #4e73df;
+    min-height: 100vh;
+    background:  linear-gradient(180deg,#1da328 10%,#1da328 100%);
+}
+
+.sidebar li {
+    position: relative;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem;
+    width: 14rem;
+    text-decoration: none;
+    margin: 0;
+
+}
+
+.sidebar-divider {
+    margin: 0 1rem 1rem;
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.siderbar-heading {
+    color: rgba(255,255,255,.4);
+    text-align: left;
+    padding: 0 1rem;
+    font-weight: 800;
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+
+#collapseOne, #collapseTwo {
+    margin: 0 1rem;
+}
+
+
+.collapseNav {
+    background: #fff;
+    margin: 0 0 1rem 0;
+}
+
+#collapseOne .nav-link,
+#collapseTwo .nav-link {
+    width: 100%;
+    color: #4e73df;
+    font-size: .85rem;
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+    transition: .2s ease;
+}
+
+.fas {
+    font-size: .85rem;
+    margin-right: .7rem;
+    color: rgba(255,255,255,.3);
+    transition: .1s ease-in;
+}
+
+.nav-item:hover .fas {
+    color: rgba(255,255,255, 255);
+}
+
+.collapse-item:hover {
+    background-color: #eaecf4;
+    padding-left: 1.4rem !important;
+}
+
+/* Admin Area and Content */
+.adminArea {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    background: #fff;
+    margin-bottom: 3rem;
+}
+
+.text-grey {
+    color: #5a5c69;
+}
+
+#admin-img {
+    height: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 .75rem;
+    border-left: 1px solid #e5e5e5;
+}
+
+#admin-img img {
+    width: 2rem;
+}
+
+#admin-img span {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.pageHeader {
+    margin-bottom: 2rem;
+    /* justify-content: space-between;
+    display: flex;
+    align-items: center; */
+}
+.pageHeader h4, .pageHeader h2 {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.pageHeader h4 span {
+    color: #4b70dc;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* Admin Content Row */
+
+.cardd {
+    width: 80%;
+    border-left: .25rem solid #4e73df!important;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    transition: .2s ease;
+}
+
+.cardd:hover {
+    transform: translateY(-10px);
+}
+
+.card-class {
+    padding: 1rem 2rem;
+}
+
+.card-classrdd span {
+    color: #4e73df;
+    font-size: 1.2rem;
+}
+.cardd-body {
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cardd-body i {
+    font-size: 25px;
+    color: #4e73df;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+/*Clients Pages */
+
+.addNewClient {
+    padding: 6px 14px;
+    background-color: #4e73df;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 2rem;
+}
+
+
+	.table-wrapper {
+        background: #fff;
+        padding: 20px 25px;
+        margin: 30px 0;
+		border-radius: 3px;
+        box-shadow: 0 4px 8px #dadce0;
+    }
+	.table-title {        
+		padding-bottom: 15px;
+		background: #435d7d;
+		color: #fff;
+		padding: 16px 30px;
+		margin: -20px -25px 10px;
+		border-radius: 3px 3px 0 0;
+    }
+    .table>thead:first-child>tr:first-child>th {
+        border-top: 0;
+    }
+    .table-title h2 {
+		margin: 5px 0 0;
+		font-size: 24px;
+	}
+	.table-title .btn-group {
+		float: right;
+	}
+	.table-title .btn {
+		color: #fff;
+		float: right;
+		font-size: 13px;
+		border: none;
+		min-width: 50px;
+		border-radius: 2px;
+		border: none;
+		outline: none !important;
+		margin-left: 10px;
+	}
+	.table-title .btn i {
+		float: left;
+		font-size: 21px;
+		margin-right: 5px;
+	}
+	.table-title .btn span {
+		float: left;
+		margin-top: 2px;
+	}
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+		padding: 12px 15px;
+		vertical-align: middle;
+    }
+	table.table tr th:first-child {
+		width: 60px;
+	}
+	table.table tr th:last-child {
+		width: 100px;
+	}
+    table.table-striped tbody tr:nth-of-type(odd) {
+    	background-color: #fcfcfc;
+	}
+	table.table-striped.table-hover tbody tr:hover {
+		background: #f5f5f5;
+	}
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }	
+    table.table td:last-child i {
+		opacity: 0.9;
+		font-size: 22px;
+        margin: 0 5px;
+    }
+	table.table td a {
+		font-weight: bold;
+		color: #566787;
+		display: inline-block;
+		text-decoration: none;
+		outline: none !important;
+	}
+	table.table td a:hover {
+		color: #2196F3;
+	}
+	table.table td a.edit, #action .edit {
+        color: #FFC107;
+    }
+    table.table td a.delete, #action .delete {
+        color: #F44336;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+	table.table .avatar {
+		border-radius: 50%;
+		vertical-align: middle;
+		margin-right: 10px;
+    }
+    
+	/* Custom checkbox */
+	.custom-checkbox {
+		position: relative;
+	}
+	.custom-checkbox input[type="checkbox"] {    
+		opacity: 0;
+		position: absolute;
+		margin: 5px 0 0 3px;
+		z-index: 9;
+	}
+	.custom-checkbox label:before{
+		width: 18px;
+		height: 18px;
+	}
+	.custom-checkbox label:before {
+		content: '';
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: text-top;
+		background: white;
+		border: 1px solid #bbb;
+		border-radius: 2px;
+		box-sizing: border-box;
+		z-index: 2;
+	}
+	.custom-checkbox input[type="checkbox"]:checked + label:after {
+		content: '';
+		position: absolute;
+		left: 6px;
+		top: 3px;
+		width: 6px;
+		height: 11px;
+		border: solid #000;
+		border-width: 0 3px 3px 0;
+		transform: inherit;
+		z-index: 3;
+		transform: rotateZ(45deg);
+	}
+	.custom-checkbox input[type="checkbox"]:checked + label:before {
+		border-color: #03A9F4;
+		background: #03A9F4;
+	}
+	.custom-checkbox input[type="checkbox"]:checked + label:after {
+		border-color: #fff;
+	}
+	.custom-checkbox input[type="checkbox"]:disabled + label:before {
+		color: #b8b8b8;
+		cursor: auto;
+		box-shadow: none;
+		background: #ddd;
+	}
+	/* Modal styles */
+	.modal .modal-dialog {
+		max-width: 400px;
+	}
+	.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+		padding: 20px 30px;
+	}
+	.modal .modal-content {
+		border-radius: 3px;
+	}
+	.modal .modal-footer {
+		background: #ecf0f1;
+		border-radius: 0 0 3px 3px;
+	}
+    .modal .modal-title {
+        display: inline-block;
+    }
+	.modal .form-control {
+		border-radius: 2px;
+		box-shadow: none;
+		border-color: #dddddd;
+	}
+	.modal textarea.form-control {
+		resize: vertical;
+	}
+	.modal .btn {
+		border-radius: 2px;
+		min-width: 100px;
+	}	
+	.modal form label {
+		font-weight: normal;
+	}	
+
+    /* Add Client */
+
+
+
+/* All Jobs Styles */
+
+.padding {
+    display: flex;
+    width: 80%;
+    padding: 20px 0;
+    background: #fff;
+    border-top: 1px solid #dee2e6; 
+}
+
+ul li:first-child > .padding:first-child {
+    border-top: 0;
+}
+
+.addVacancyInfo, .addClient {
+    margin: 2rem 1rem;
+}
+
+.addVacancyInfo label,
+.addClient label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.addVacancyInfo .form-group input,
+.addClient .form-group input {
+    outline: none;
+    box-shadow: none;
+}
+
+.addClient h3 {
+    color: #5a5c69;
+    margin-bottom: 1rem;
+}
+
+.addClient .sentMessage {
+  width: 50%;  
+}
+
+.addClient .sentMessage textarea {
+    resize: none;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.addClient .sentMessage .sendButton {
+    text-align: right;
+}
+
+/* User View Page */
+
+.user-sidebar-icon {
+    padding:1rem;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.user-sidebar-icon img {
+    border-radius: 50%;
+    background: #fff;
+}
+
+.user-sidebar-icon h4 {
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+
+
+
